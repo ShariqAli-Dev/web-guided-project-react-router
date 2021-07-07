@@ -40,7 +40,7 @@ export default function App(props) {
         {/* With Switch, the first Route "wins" */}
         {/* Without Switch, ALL routes with paths that match are rendered */}
         <Route path="/items-list/:id">
-          <Item />
+          <Item items={stock} />
         </Route>
 
         <Route path="/items-list">

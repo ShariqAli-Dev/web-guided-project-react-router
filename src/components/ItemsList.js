@@ -8,7 +8,8 @@ export default function ItemsList(props) {
   // Returns an object with things, among them the current url
   // So we don't have to repeat it in our links
   const { url, path } = useRouteMatch();
-
+  console.log(`The URL from useRouterMatch`, url);
+  console.log(`The path from useRouterMatch`, path);
   return (
     <div className="items-list-wrapper">
       {items.map((item) => (
